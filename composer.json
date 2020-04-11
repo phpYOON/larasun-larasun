@@ -3,6 +3,7 @@
     "type": "project",
     "description": "",
     "license": "MIT",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "App\\": "app/",
