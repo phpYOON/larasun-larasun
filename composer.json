@@ -5,7 +5,7 @@
     "license": "MIT",
     "minimum-stability": "stable",
     "require": {
-        "larasun/framework": "^0.0.3"
+        "larasun/framework": "^0.0.7"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.0"
@@ -20,5 +20,14 @@
       "psr-4": {
         "Illuminate\\Tests\\": "tests/"
       }
-    }
+    },
+    "repositories": [
+      {
+        "type": "path",
+        "url": "../library",
+        "options": {
+          "symlink": false
+        }
+      }
+    ]
 }
