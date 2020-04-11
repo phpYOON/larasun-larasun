@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0acd1d91279772264cffcc399d20fc0c",
+    "content-hash": "2bba4218dad57a301387f24fe60d6a55",
     "packages": [
         {
             "name": "larasun/framework",
-            "version": "dev-master",
+            "version": "v0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpYOON/larasun-framework.git",
+                "reference": "4fc85956185044bd475c5c3324e30c67c8d7fd65"
+            },
             "dist": {
-                "type": "path",
-                "url": "../library",
-                "reference": "59f075c4b15b183fd76d35637277c06ca7ba2642"
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpYOON/larasun-framework/zipball/4fc85956185044bd475c5c3324e30c67c8d7fd65",
+                "reference": "4fc85956185044bd475c5c3324e30c67c8d7fd65",
+                "shasum": ""
             },
             "require": {
                 "php": ">=7.2"
@@ -26,9 +32,11 @@
                     "Illuminate\\": "src/illuminate/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
-            ]
+            ],
+            "time": "2020-04-11T04:25:24+00:00"
         }
     ],
     "packages-dev": [
@@ -197,9 +205,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "larasun/framework": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
