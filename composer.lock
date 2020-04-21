@@ -4,24 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2bba4218dad57a301387f24fe60d6a55",
+    "content-hash": "0acd1d91279772264cffcc399d20fc0c",
     "packages": [
         {
             "name": "larasun/framework",
-            "version": "v0.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpYOON/larasun-framework.git",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../library",
                 "reference": "4fc85956185044bd475c5c3324e30c67c8d7fd65"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpYOON/larasun-framework/zipball/4fc85956185044bd475c5c3324e30c67c8d7fd65",
-                "reference": "4fc85956185044bd475c5c3324e30c67c8d7fd65",
-                "shasum": ""
-            },
             "require": {
-                "php": ">=7.2"
+                "php": ">=7.2.5",
+                "symfony/finder": "^5.0"
             },
             "type": "library",
             "autoload": {
@@ -32,11 +27,72 @@
                     "Illuminate\\": "src/illuminate/"
                 }
             },
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v5.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "600a52c29afc0d1caa74acbec8d3095ca7e9910d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/600a52c29afc0d1caa74acbec8d3095ca7e9910d",
+                "reference": "600a52c29afc0d1caa74acbec8d3095ca7e9910d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "time": "2020-04-11T04:25:24+00:00"
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-03-27T16:56:45+00:00"
         }
     ],
     "packages-dev": [
@@ -205,7 +261,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "larasun/framework": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -1,12 +1,34 @@
 <?php
-use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\RouteFacade;
 
-Route::get('/',  function (){
-    echo "home";
+RouteFacade::get('/', function(){
+    echo "_home_";
+});
+
+RouteFacade::get('/shop', function(){
+    echo "_shop_";
 });
 
 
-Route::get('/user/list/', 'UserController@list');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Route::get('/user/list/', 'UserController@list');
 
 
 
